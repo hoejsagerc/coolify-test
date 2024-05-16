@@ -20,6 +20,11 @@ app.MapGet("/", () =>
     return Results.Ok("Healty");
 });
 
+app.MapGet("/super", () =>
+{
+    return Results.Ok("Super endpoint");
+});
+
 app.MapGet("/weatherforecast", () =>
 {
     var forecast = Enumerable.Range(1, 5).Select(index =>
